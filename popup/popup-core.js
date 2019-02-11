@@ -23,7 +23,6 @@ status_ck.onchange = function(){
 function refresh(){
 	document.getElementById("rolls").innerHTML = "Rolls: "+(localStorage.getItem("count") || "0");
 	document.getElementById("balance").innerHTML = (localStorage.getItem("balance") || "0.00000000")+" BTC";
-	document.getElementById("interest").innerHTML = "Interest: "+(Math.round(localStorage.getItem("balance") * 0.000109589 *100000000)/100000000 || "0.00000000")+" BTC";
 }
 
 // Set start values
